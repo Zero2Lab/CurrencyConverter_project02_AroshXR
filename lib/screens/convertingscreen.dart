@@ -30,20 +30,9 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                 end: Alignment.bottomCenter,
               ),
             ),
-            child: Expanded(
-              child: Container(
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Color(0xFF2C64D2),
-                      Color(0xFF043594),
-                    ],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                  ),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(40.0),
+              child: Padding(
+                padding: const EdgeInsets.all(52.0),
+                child: SingleChildScrollView(
                   child: Column(
                     children: [
                       const SizedBox(
@@ -68,14 +57,14 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                         height: 35.0,
                       ),
                       Text(
-                        'You can select your choice from any of these countries.\n********************************\nPlease make sure to add the word in the brackets to prompt.',
+                        'You can select your choice from any of these countries.\n******************************\nPlease make sure to add the word in the brackets to prompt.',
                         style: GoogleFonts.poppins(
                             fontSize: 17.0,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
                       const SizedBox(
-                        height: 20.0,
+                        height: 30.0,
                       ),
                       Container(
                         color: Colors.amber.shade50,
@@ -89,7 +78,7 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                         ),
                       ),
                       const SizedBox(
-                        height: 20.0,
+                        height: 30.0,
                       ),
                       Container(
                         color: Colors.amber.shade50,
@@ -103,7 +92,7 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                         ),
                       ),
                       const SizedBox(
-                        height: 20.0,
+                        height: 25.0,
                       ),
                       MaterialButton(
                         onPressed: () {
@@ -151,7 +140,7 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                           }
                           print("Calculate");
                         },
-     
+                       
                         color: Colors.lightBlue,
                         child: Text('Calculate',
                             style: GoogleFonts.poppins(
@@ -171,6 +160,6 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                   ),
                 ),
               ),
-            )));
+            ));
   }
 }
