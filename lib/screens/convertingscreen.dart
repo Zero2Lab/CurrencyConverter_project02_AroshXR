@@ -100,37 +100,37 @@ class _ConvertingscreenState extends State<Convertingscreen> {
                           if(currency == "USD"){
                             double foreignAmount = double.tryParse(amountcontroller.text) ?? 0.00;
                             setState(() {
-                              amount = foreignAmount + 303.68;
+                              amount = foreignAmount * 303.68;
                               
                             });
                           }else if(currency == "AUD"){
                             double foreignAmount = double.tryParse(amountcontroller.text) ?? 0.00;
                             setState(() {
-                              amount = foreignAmount + 204.78;
+                              amount = foreignAmount * 204.78;
                               
                             });
                           }else if(currency == "CAD"){
                             double foreignAmount = double.tryParse(amountcontroller.text) ?? 0.00;
                             setState(() {
-                              amount = foreignAmount + 222.93;
+                              amount = foreignAmount * 222.93;
                               
                             });
                             }else if(currency == "RUB"){
                             double foreignAmount = double.tryParse(amountcontroller.text) ?? 0.00;
                             setState(() {
-                              amount = foreignAmount + 3.42;
+                              amount = foreignAmount * 3.42;
                               
                             });
                             }else if(currency == "DIR"){
                             double foreignAmount = double.tryParse(amountcontroller.text) ?? 0.00;
                             setState(() {
-                              amount = foreignAmount + 82.68;
+                              amount = foreignAmount * 82.68;
                               
                             });
                             }else if(currency == "EUR"){
                             double foreignAmount = double.tryParse(amountcontroller.text) ?? 0.00;
                             setState(() {
-                              amount = foreignAmount + 328.74;
+                              amount = foreignAmount * 328.74;
                               
                             });
                             }else{
